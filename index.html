@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Resume</title>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<style>
+  .menubutton {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+</style>
+
+<body>
+  <!-- <div id="loadingpage">
+    <span id="a11">Hello</span>
+    <span id="a12">Welcome</span>
+    <span id="a13">To</span>
+    <span id="a14">Nikku's</span>
+    <span id="a15">PORTFOLIO</span>
+  </div> -->
+  <div id="navbar">
+    <div id="a20">
+      <div> <a href="#">HOME</a></div>
+      <div><a href="#">PORTFOLIO</a></div>
+      <div><a href="#">RESUME</a></div>
+      <div><a href="#">ABOUT</a></div>
+      <div><a href="#">CONTACT</a></div>
+    </div>
+    <div id="a21">
+      <div class="menubutton" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+
+  </div>
+  <div id="lord">
+    <div id="firstpage">
+      <div id="hello">
+        <div id="a22">Hello, I'm</div>
+        <div id="a23">Nitesh Yadav</div>
+        <div id="a24">AND THIS IS MY RESUME</div>
+        <!-- <div id="a25"></div>
+                <script>const typed = new Typed('#a25', {
+                  strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+                  typeSpeed: 50,
+                  loop:true,
+                  showCursor:false
+                });</script> -->
+      </div>
+    </div>
+
+    <div id="myskills">
+      <div id="myskil">
+        <div id="a30">
+          <div id="a31">MY SKILLS</div>
+          <div id="a32"></div>
+        </div>
+      </div>
+      <div id="frontend">
+        <div id="a35">
+          <div id="a40">
+            <div id="a46"><img src="html5-logo-html-logo-0.png">
+            </div>
+          </div>
+          <div id="a41">
+            <div id="a43">
+              <div id="a44"></div>
+              <!-- <div id="a45"></div> -->
+            </div>
+          </div>
+          <div id="a42">
+            <!-- <p id="nbr">95</p> -->
+            70%
+          </div>
+        </div>
+        <div id="a36">
+          <div id="a40">
+            <div id="a46"><img src="css.png">
+            </div>
+          </div>
+          <div id="a41">
+            <div id="a43">
+              <div id="a45"></div>
+              <!-- <div id="a47"></div> -->
+            </div>
+          </div>
+          <div id="a42">
+            <!-- <p id="nbr">95</p> -->
+            70%
+          </div>
+        </div>
+        <div id="a37">
+          <div id="a40">
+            <div id="a46"><img src="javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png">
+            </div>
+          </div>
+          <div id="a41">
+            <div id="a43">
+              <div id="a47"></div>
+              <!-- <div id="a48"></div> -->
+            </div>
+          </div>
+          <div id="a42">
+            <!-- <p id="nbr">95</p> -->
+            60%
+          </div>
+        </div>
+        <div id="a38">
+          <div id="a40">
+            <div id="a46"><img
+                src="https://w7.pngwing.com/pngs/720/46/png-transparent-jquery-plain-wordmark-logo-icon-thumbnail.png">
+            </div>
+          </div>
+          <div id="a41">
+            <div id="a43">
+              <div id="a48"></div>
+              <!-- <div id="a49"></div> -->
+            </div>
+          </div>
+          <div id="a42">
+            <!-- <p id="nbr">95</p> -->
+            60%
+          </div>
+        </div>
+        <div id="a39">
+          <div id="a40">
+            <div id="a46"><img
+                src="https://w7.pngwing.com/pngs/341/514/png-transparent-bootstrap-plain-logo-icon-thumbnail.png"></div>
+          </div>
+          <div id="a41">
+            <div id="a43">
+              <div id="a49"></div>
+              <!-- <div id="a50"></div> -->
+            </div>
+          </div>
+          <div id="a42">
+            <!-- <p id="nbr">95</p> -->
+            70%
+          </div>
+        </div>
+      </div>
+      <div id="backend">
+        <div id="a35">
+          <div id="a40">
+            <div id="a46"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png">
+            </div>
+          </div>
+          <div id="a41">
+            <div id="a43">
+              <div id="a50"></div>
+              <!-- <div id="a50"></div> -->
+            </div>
+          </div>
+          <div id="a42">
+            <!-- <p id="nbr">95</p> -->
+            50%
+          </div>
+        </div>
+        <div id="a36">
+          <div id="a40">
+            <div id="a46"><img
+                src="https://w7.pngwing.com/pngs/525/959/png-transparent-microsoft-azure-sql-database-microsoft-sql-server-cloud-computing-text-trademark-logo.png">
+            </div>
+          </div>
+          <div id="a41">
+            <div id="a43">
+              <div id="a51"></div>
+              <!-- <div id="a50"></div> -->
+            </div>
+          </div>
+          <div id="a42">
+            <!-- <p id="nbr">95</p> -->
+            50%
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="secondpage">
+      <div id="project">
+        <div id="a60">
+          <div id="a64">PROJECTS</div>
+        </div>
+        <div id="a61">
+          <div id="a62">
+            <div id="a65">
+              <a href="https://nitesh069.github.io/DIRECTONE/"><img src="directone clone.png" alt=""></a>
+            </div>
+            <div id="a66">
+              <div id="a67">I Tried to make a Awesome DIRECTONE Clone landing page.And shall make many Awesome Website
+                in future.</div>
+              <div id="a68">
+                <a href="https://nitesh069.github.io/DIRECTONE/">
+                  <div id="a69">Visit Site</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="a63">
+            <div id="a65">
+              <a href="https://nitesh069.github.io/honorclone/"><img src="honor clone.png" alt=""></a>
+            </div>
+            <div id="a66">
+              <div id="a67">I Tried to make a Awesome HONOR Clone landing page.And shall make many Awesome Website
+                in future.</div>
+              <div id="a68">
+                <a href="https://nitesh069.github.io/honorclone/">
+                  <div id="a69">Visit Site</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="education">
+      <div id="a70">
+        <div id="a71">
+          <div id="a78">EDUCATION</div>
+        </div>
+        <div id="a72">
+          <div id="a73">
+            <div id="a79">01/07/2023</div>
+            <div id="a80">BCA(Bachelor of Computer Applications) with 73%</div>
+            <div id="a81">University Maharaja College, Jaipur</div>
+          </div>
+          <div id="a74">
+            <div id="a79">01/03/2023</div>
+            <div id="a80">Full-Stack Web Development</div>
+            <div id="a81">Samyak Coaching Center, Malviya Nagar</div>
+          </div>
+          <div id="a75">
+            <div id="a79">23/08/2020</div>
+            <div id="a80">12th</div>
+            <div id="a81">R.P.M., Alwar</div>
+          </div>
+          <div id="a76">
+            <div id="a79">01/07/2018</div>
+            <div id="a80">10th</div>
+            <div id="a81">R.P.M., Alwar</div>
+          </div>
+          <div id="a77">
+            <div id="a79">11/12/2015</div>
+            <div id="a80">RSCIT</div>
+            <div id="a81">Samarpan Coaching Center, Alwar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="aboutme">
+      <div id="a90">
+        <div id="a91">
+          <div id="a93">
+
+            <img src="Screenshot 2023-08-30 004951.png" alt="">
+          </div>
+        </div>
+        <div id="a92">
+          <div id="a96">
+
+            <div id="a94" class="a94">ABOUT ME</div>
+            <div id="a95" class="a94">
+              <div id="a97">
+                Well, there's not too much to say about me, but I'm happy to share what I can. I'm a pretty average
+                person, I suppose. I have my hobbies and interests, just like anyone else. I like to read, watch movies,
+                and spend time with friends and family.
+              </div>
+              <div id="a98">
+                Thanks
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 100vh;"></div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+  <script src="index.js"></script>
+</body>
+
+</html>
