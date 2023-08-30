@@ -108,9 +108,8 @@ gsap.to("#a32", {
     }
 })
 
-var myskills = gsap.timeline();
-myskills
-    .from("#frontend", {
+
+    gsap.from("#frontend", {
         duration: 1,
         y: 100,
         opacity: 0,
@@ -123,7 +122,7 @@ myskills
             scrub: 5
         }
     })
-    .to("#a44", {
+    gsap.to("#a44", {
         // width:"95%",
         // stagger:"",
         duration: 3,
@@ -133,14 +132,14 @@ myskills
         scrollTrigger: {
             trigger: "#a44",
             scroller: "body",
-            // markers:true,
-            start: "top 80%",
-            end: "top 80%",
-            scrub: 5
+            // // markers:true,
+            // start: "top 80%",
+            // end: "top 80%",
+            // scrub: 5
         }
     })
 
-    .to("#a45", {
+    gsap.to("#a45", {
         // width:"95%",
         // stagger:"",
         duration: 3,
@@ -151,12 +150,12 @@ myskills
             trigger: "#a44",
             scroller: "body",
             // markers:true,
-            start: "top 80%",
-            end: "top 80%",
-            scrub: 5
+            // start: "top 80%",
+            // end: "top 80%",
+            // scrub: 5
         }
     })
-    .to("#a47", {
+    gsap.to("#a47", {
         // width:"95%",
         // stagger:"",
         duration: 3,
@@ -167,12 +166,12 @@ myskills
             trigger: "#a47",
             scroller: "body",
             // markers:true,
-            start: "top 80%",
-            end: "top 80%",
-            scrub: 5
+            // start: "top 80%",
+            // end: "top 80%",
+            // scrub: 5
         }
     })
-    .to("#a48", {
+    gsap.to("#a48", {
         // width:"95%",
         // stagger:"",
         duration: 3,
@@ -183,12 +182,12 @@ myskills
             trigger: "#a48",
             scroller: "body",
             // markers:true,
-            start: "top 80%",
-            end: "top 80%",
-            scrub: 5
+            // start: "top 80%",
+            // end: "top 80%",
+            // scrub: 5
         }
     })
-    .to("#a49", {
+    gsap.to("#a49", {
         // width:"95%",
         // stagger:"",
         duration: 3,
@@ -199,12 +198,12 @@ myskills
             trigger: "#a49",
             scroller: "body",
             // markers:true,
-            start: "top 80%",
-            end: "top 80%",
-            scrub: 5
+            // start: "top 80%",
+            // end: "top 80%",
+            // scrub: 5
         }
     })
-    .to("#a50", {
+    gsap.to("#a50", {
         // width:"95%",
         // stagger:"",
         duration: 3,
@@ -215,12 +214,12 @@ myskills
             trigger: "#a50",
             scroller: "body",
             // markers:true,
-            start: "top 80%",
-            end: "top 80%",
-            scrub: 5
+            // start: "top 80%",
+            // end: "top 80%",
+            // scrub: 5
         }
     })
-    .to("#a51", {
+    gsap.to("#a51", {
         // width:"95%",
         // stagger:"",
         duration: 3,
@@ -231,12 +230,12 @@ myskills
             trigger: "#a51",
             scroller: "body",
             // markers:true,
-            start: "top 80%",
-            end: "top 80%",
-            scrub: 5
+            // start: "top 80%",
+            // end: "top 80%",
+            // scrub: 5
         }
     })
-    .from("#a42", {
+    gsap.from("#a42", {
         // width:"95%",
         // stagger:"",
         duration: 3,
@@ -477,6 +476,40 @@ gsap.from("#a63 #a66 #a69",{
             scrub:5
         }
     })
+    // let a104=gsap.timeline();
+    // a104
+    gsap.from(".a104",{
+
+        opacity:0,
+        duration:1,
+        stagger:.2,
+        y:50,
+        scrollTrigger:{
+            trigger:".a104",
+            scroller:"body",
+            // start:"top 80%",
+            // end:"top 80%",
+            // scrub:5
+        }
+    })
+    // let a111=gsap.timeline();
+    // a111
+    gsap.from(".a111",{
+
+        opacity:0,
+        duration:1,
+        stagger:.2,
+        y:50,
+        scrollTrigger:{
+            trigger:".a111",
+            scroller:"body",
+            // start:"top 80%",
+            //     end:"top 80%",
+            //     scrub:5
+        }
+    })
+
+    
     
 
 var menubutton = document.querySelector(".menubutton");
